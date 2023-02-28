@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './httpclient.component.html',
   styleUrls: ['./httpclient.component.css'],
 })
-export class HttpclientService implements OnInit {
-  constructor(private http: HttpClient) {}
+export class HttpclientService {
+  constructor() {}
 
   getUsersfromServer() {
     return this.http.get('https://jsonplaceholder.typicode.com/users');
