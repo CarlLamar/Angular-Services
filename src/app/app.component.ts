@@ -15,7 +15,7 @@ export class AppComponent {
   ngOnInit() {
     this.todaydate = this.myservice.showTodayDate();
     console.log(this.myservice.serviceproperty);
-    this.myservice.serviceproperty = 'Component created'; //value is changed
+    this.myservice.serviceproperty = 'Component created';
     this.componentproperty = this.myservice.serviceproperty;
   }
 }
